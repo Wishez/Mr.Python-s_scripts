@@ -1,0 +1,46 @@
+body > * {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+}
+
+body {
+	font-size: 16px;
+	line-height: 145%;
+	font-family: monospace, monospace;
+	padding: 2%;
+}
+
+.controller {
+	margin: 15px auto 0;
+	width: 20%;
+}
+
+.controller__label, .controller__item {
+	width: 100%;
+	display: block;
+}
+
+.submitButton {
+	margin-top: 20px;
+}
+@media (max-width: 768px) {
+	.controller {
+		width: 60%;	
+	}
+}
+.article {
+	width: 80%;
+	margin: 0 auto;
+	list-style: none;
+}
+
+.article__content {
+	padding: 0 15%;
+}
+.article__title {
+	cursor: pointer;
+	text-align: center;
+	
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrapper">
+  	<div class="container">
+  		<form id="connectYou" action="/cgi-bin/send_mail.py">
+        <div class="controller">
+          <label for="name" class="controller__label"></label>
+          <input name="name" type="text" class="controller__item" maxlength="25">
+        </div>
+        <div class="controller">
+          <label for="tel" class="controller__label"></label>
+          <input name="tel" type="tel" class="controller__item">
+        </div>
+  			<div class="controller">
+  				<label for="email" class="controller__label"></label>
+  				<input name="email" type="email" class="controller__item">
+  			</div>
+  			<div class="controller">
+  				<label for="birthday" class="controller__label"></label>
+  				<input name="birthday" type="date" class="controller__item">
+  			</div>
+        <div class="controller">
+          <label for="message" class="controller__label"></label>
+          <textarea name="message" type="text" rows="5" class="controller__item"></textarea>
+        </div>
+  			<div class="submitBlock">
+  				<button type='submit' class='submitButton btn btn-primary center-block' id="submitBtn">Send to Email</button>
+  			</div>
+  		</form>
+  	</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
